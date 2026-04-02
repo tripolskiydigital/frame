@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAME - Ремонт квартиры под ключ в Батуми</title>
+    <meta name="description" content="Ремонт мечты в Батуми. Под ключ, прозрачно, без переделок.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="clients.css">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">FRAME</div>
+                        <div class="mobile-menu-toggle d-none">
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#workflow">Этапы работы</a></li>
+                <li><a href="#pricing">Тарифы</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="index.html">Агентам (B2B)</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary nav-btn">Заказать проект</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in-up">
+            <span class="badge">Ремонт под ключ в Батуми</span>
+            <h1>Ремонт без стресса и<br>скрытых платежей</h1>
+            <p class="subtitle">От проекта до финальной уборки. Вы получаете полностью готовую для жизни квартиру, где продумана каждая деталь. Прозрачные цены, фиксированные сроки.</p>
+            <div class="hero-actions">
+                <a href="#pricing" class="btn btn-primary">Посмотреть тарифы</a>
+                <a href="#gallery" class="btn btn-secondary">Наши работы</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Вниз</span>
+            <i data-feather="chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Advantages Section -->
+    <section class="section bg-alt" id="advantages">
+        <div class="container text-center">
+            <div class="section-header fade-in-up">
+                <h2>Мы меняем стандарты ремонта</h2>
+                <p>Больше никаких непредсказуемых смет, смещенных сроков и испорченных нервов.</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="value-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="icon-wrapper"><i data-feather="check-circle"></i></div>
+                    <h3>Фиксированная цена</h3>
+                    <p>Стоимость ремонта закрепляется в договоре после утверждения пакета и не меняется.</p>
+                </div>
+                <div class="value-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="icon-wrapper"><i data-feather="monitor"></i></div>
+                    <h3>Удаленный контроль</h3>
+                    <p>Мы берем на себя все заботы, регулярно отчитываясь о проделанной работе.</p>
+                </div>
+                <div class="value-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="icon-wrapper"><i data-feather="award"></i></div>
+                    <h3>Единая ответственность</h3>
+                    <p>Сами организуем поставку материалов, координируем бригады и качество.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Content (PDF Context) -->
+    <section class="section" id="workflow">
+        <div class="container fade-in-up">
+            <div class="section-header text-center">
+                <h2>Как мы работаем</h2>
+                <p>Прозрачный процесс от первой встречи до передачи ключей.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-number">01</div>
+                        <i data-feather="search"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Первый контакт и Замеры</h4>
+                        <p>Выявляем ваши потребности (тип ремонта, сроки, бюджет). Проводим выезд на объект, детальный осмотр, замеры, а также фото- и видеофиксацию текущего состояния.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-number">02</div>
+                        <i data-feather="file-text"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Смета и Договор</h4>
+                        <p>На основе замеров и выбранного пакета составляем жесткую смету. Подписываем официальный договор с фиксацией цены, сроков и объема работ (с учетом 3х этапов оплаты).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-number">03</div>
+                        <i data-feather="tool"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Черновые работы (Оплата 40%)</h4>
+                        <p>Демонтаж, электрика, сантехника, стяжка пола, штукатурка стен. Жесткий промежуточный контроль качества с фото- и видеоотчетом перед переходом к чистовой.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-number">04</div>
+                        <i data-feather="layout"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Чистовые работы (Оплата 40%)</h4>
+                        <p>Отделка стен, укладка пола, натяжные/гипсокартонные потолки, освещение, установка сантехники, финальные элементы интерьера.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-number">05</div>
+                        <i data-feather="key"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Сдача объекта (Оплата 20%)</h4>
+                        <p>Финальная проверка, генеральная уборка, устранение малейших недочетов. Идеальная приемка клиентом и торжественная передача ключей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section Rooms with Tabs & Swiper -->
+    <section class="section bg-alt" id="gallery">
+        <div class="container text-center fade-in-up">
+            <div class="section-header">
+                <h2>Галерея проектов</h2>
+                <p>Посмотрите на качество нашей работы по каждой зоне.</p>
+            </div>
+
+            <!-- Gallery Tabs -->
+            <div class="tabs-header" style="justify-content: center; gap: 20px; border-bottom: none; margin-bottom: 2rem;">
+                <button class="tab-btn active" data-target="gallery-kitchen" style="flex: unset; padding: 10px 20px;">Кухня</button>
+                <button class="tab-btn" data-target="gallery-bath" style="flex: unset; padding: 10px 20px;">Ванная</button>
+                <button class="tab-btn" data-target="gallery-bed" style="flex: unset; padding: 10px 20px;">Спальня</button>
+                <button class="tab-btn" data-target="gallery-living" style="flex: unset; padding: 10px 20px;">Зал</button>
+            </div>
+
+            <!-- Kitchen Slider -->
+            
+            <div class="tab-content active" id="gallery-kitchen">
+                <div class="slider-container" style="position: relative; max-width: 1200px; margin: 0 auto;">
+                    <div class="swiper room-swiper gallery-wrapper" style="padding-bottom: 50px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="kitchen">
+                                    <img src="images/gallery_kitchen.png" alt="Кухня 1">
+                                    <div class="gallery-overlay">Кухня-гостиная 1</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="kitchen">
+                                    <img src="images/gallery_kitchen.png" alt="Кухня 2">
+                                    <div class="gallery-overlay">Кухня-гостиная 2</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="kitchen">
+                                    <img src="images/gallery_kitchen.png" alt="Кухня 3">
+                                    <div class="gallery-overlay">Кухня-гостиная 3</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="kitchen">
+                                    <img src="images/gallery_kitchen.png" alt="Кухня 4">
+                                    <div class="gallery-overlay">Кухня-гостиная 4</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="kitchen">
+                                    <img src="images/gallery_kitchen.png" alt="Кухня 5">
+                                    <div class="gallery-overlay">Кухня-гостиная 5</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="kitchen">
+                                    <img src="images/gallery_kitchen.png" alt="Кухня 6">
+                                    <div class="gallery-overlay">Кухня-гостиная 6</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+    
+
+            <div class="tab-content" id="gallery-bath">
+                <div class="slider-container" style="position: relative; max-width: 1200px; margin: 0 auto;">
+                    <div class="swiper room-swiper gallery-wrapper" style="padding-bottom: 50px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bath.png" class="glightbox" data-gallery="bath">
+                                    <img src="images/gallery_bath.png" alt="Ванная 1">
+                                    <div class="gallery-overlay">Ванная 1</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bath.png" class="glightbox" data-gallery="bath">
+                                    <img src="images/gallery_bath.png" alt="Ванная 2">
+                                    <div class="gallery-overlay">Ванная 2</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bath.png" class="glightbox" data-gallery="bath">
+                                    <img src="images/gallery_bath.png" alt="Ванная 3">
+                                    <div class="gallery-overlay">Ванная 3</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bath.png" class="glightbox" data-gallery="bath">
+                                    <img src="images/gallery_bath.png" alt="Ванная 4">
+                                    <div class="gallery-overlay">Ванная 4</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bath.png" class="glightbox" data-gallery="bath">
+                                    <img src="images/gallery_bath.png" alt="Ванная 5">
+                                    <div class="gallery-overlay">Ванная 5</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bath.png" class="glightbox" data-gallery="bath">
+                                    <img src="images/gallery_bath.png" alt="Ванная 6">
+                                    <div class="gallery-overlay">Ванная 6</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+    
+
+            <div class="tab-content" id="gallery-bed">
+                <div class="slider-container" style="position: relative; max-width: 1200px; margin: 0 auto;">
+                    <div class="swiper room-swiper gallery-wrapper" style="padding-bottom: 50px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bed.png" class="glightbox" data-gallery="bed">
+                                    <img src="images/gallery_bed.png" alt="Спальня 1">
+                                    <div class="gallery-overlay">Спальня 1</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bed.png" class="glightbox" data-gallery="bed">
+                                    <img src="images/gallery_bed.png" alt="Спальня 2">
+                                    <div class="gallery-overlay">Спальня 2</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bed.png" class="glightbox" data-gallery="bed">
+                                    <img src="images/gallery_bed.png" alt="Спальня 3">
+                                    <div class="gallery-overlay">Спальня 3</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bed.png" class="glightbox" data-gallery="bed">
+                                    <img src="images/gallery_bed.png" alt="Спальня 4">
+                                    <div class="gallery-overlay">Спальня 4</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bed.png" class="glightbox" data-gallery="bed">
+                                    <img src="images/gallery_bed.png" alt="Спальня 5">
+                                    <div class="gallery-overlay">Спальня 5</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_bed.png" class="glightbox" data-gallery="bed">
+                                    <img src="images/gallery_bed.png" alt="Спальня 6">
+                                    <div class="gallery-overlay">Спальня 6</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+    
+
+            <div class="tab-content" id="gallery-living">
+                <div class="slider-container" style="position: relative; max-width: 1200px; margin: 0 auto;">
+                    <div class="swiper room-swiper gallery-wrapper" style="padding-bottom: 50px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_living.png" class="glightbox" data-gallery="living">
+                                    <img src="images/gallery_living.png" alt="Зал 1">
+                                    <div class="gallery-overlay">Зал 1</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_living.png" class="glightbox" data-gallery="living">
+                                    <img src="images/gallery_living.png" alt="Зал 2">
+                                    <div class="gallery-overlay">Зал 2</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_living.png" class="glightbox" data-gallery="living">
+                                    <img src="images/gallery_living.png" alt="Зал 3">
+                                    <div class="gallery-overlay">Зал 3</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_living.png" class="glightbox" data-gallery="living">
+                                    <img src="images/gallery_living.png" alt="Зал 4">
+                                    <div class="gallery-overlay">Зал 4</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_living.png" class="glightbox" data-gallery="living">
+                                    <img src="images/gallery_living.png" alt="Зал 5">
+                                    <div class="gallery-overlay">Зал 5</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide gallery-slide">
+                                <a href="images/gallery_living.png" class="glightbox" data-gallery="living">
+                                    <img src="images/gallery_living.png" alt="Зал 6">
+                                    <div class="gallery-overlay">Зал 6</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+    
+
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section packages-section" id="packages">
+        <div class="container text-center">
+            <div class="section-header fade-in-up">
+                <h2>Пакеты ремонта</h2>
+                <p>Прозрачные решения под любые задачи ваших клиентов.</p>
+            </div>
+
+            <div class="grid grid-3 pricing-cards">
+                <!-- Package 1 -->
+                <div class="package-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="package-head">
+                        <h3>Econom</h3>
+                        <div class="price">$700 <span>/ m²</span></div>
+                        <p class="short-desc">Заехать и жить без лишних вложений</p>
+                    </div>
+                    <ul class="package-features">
+                        <li><i data-feather="check"></i> Простые интерьерные решения</li>
+                        <li><i data-feather="check"></i> Базовые материалы</li>
+                        <li><i data-feather="check"></i> Подходит для быстрого ремонта</li>
+                    </ul>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                        <a href="https://wa.me/995593603129" target="_blank" class="btn btn-primary" style="width: 100%;">Заказать ремонт</a>
+                        <a href="#pricing" class="btn btn-outline" style="width: 100%; border-color: var(--border-color); color: inherit;" onclick="document.querySelector('.tab-btn[data-target=\'tab-econom\']').click()">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card featured fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="featured-badge">Популярный</div>
+                    <div class="package-head">
+                        <h3>Comfort</h3>
+                        <div class="price">$850 <span>/ m²</span></div>
+                        <p class="short-desc">Жить красиво, удобно и без переделок</p>
+                    </div>
+                    <ul class="package-features">
+                        <li><i data-feather="check"></i> Более качественные материалы</li>
+                        <li><i data-feather="check"></i> Продуманная планировка и техника</li>
+                        <li><i data-feather="check"></i> Комфорт для жизни и аренды</li>
+                    </ul>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                        <a href="https://wa.me/995593603129" target="_blank" class="btn btn-primary" style="width: 100%;">Заказать ремонт</a>
+                        <a href="#pricing" class="btn btn-outline" style="width: 100%; border-color: var(--border-color); color: inherit;" onclick="document.querySelector('.tab-btn[data-target=\'tab-comfort\']').click()">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card fade-in-up" style="transition-delay: 0.3s;">
+                    <div class="package-head">
+                        <h3>Premium+</h3>
+                        <div class="price">от $1000 <span>/ m²</span></div>
+                        <p class="short-desc">Жить как в хорошем отеле у себя дома</p>
+                    </div>
+                    <ul class="package-features">
+                        <li><i data-feather="check"></i> Дизайн, материалы и свет как система</li>
+                        <li><i data-feather="check"></i> Высокий уровень комфорта и визуала</li>
+                        <li><i data-feather="check"></i> Подходит для жизни и дорогой аренды</li>
+                    </ul>
+                    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+                        <a href="https://wa.me/995593603129" target="_blank" class="btn btn-primary" style="width: 100%;">Заказать ремонт</a>
+                        <a href="#pricing" class="btn btn-outline" style="width: 100%; border-color: var(--border-color); color: inherit;" onclick="document.querySelector('.tab-btn[data-target=\'tab-premium\']').click()">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Tabs Section -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Стоимость работ</h2>
+                <p>Мы собрали лучшие решения для любого бюджета. Узнайте точное наполнение каждого пакета.</p>
+            </div>
+
+            <div class="tabs-container fade-in-up">
+                <!-- Tabs Navigation (Sticky) -->
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-target="tab-econom">Эконом <span class="tab-price">700$ / м²</span></button>
+                    <button class="tab-btn" data-target="tab-comfort">Комфорт <span class="tab-price">850$ / м²</span></button>
+                    <button class="tab-btn" data-target="tab-premium">Премиум+ <span class="tab-price">1000$ / м²</span></button>
+                </div>
+
+                <!-- Tab 1: Эконом -->
+                <div class="tab-content active" id="tab-econom">
+                    <div class="package-summary" style="margin-bottom: 2rem;">
+                        <p>Заехать и жить без лишних вложений</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="layout"></i> Базовая отделка</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Пол: Ламинат</span> <span class="item-price">20–35 лари</span></li>
+                                    <li><span class="item-name">Стены: Обои</span> <span class="item-price">65–75 лари</span></li>
+                                    <li><span class="item-name">Потолок: Натяжной потолок</span> <span class="item-price">30–35 лари</span></li>
+                                    <li><span class="item-name">Межкомнатные двери</span> <span class="item-price">300–500 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="zap"></i> Свет и Электрика</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Точечный свет</span> <span class="item-price">10–20 лари</span></li>
+                                    <li><span class="item-name">Люстры</span> <span class="item-price">50–150 лари</span></li>
+                                    <li><span class="item-name">Розетки</span> <span class="item-price">8–10 лари</span></li>
+                                    <li><span class="item-name">Электрощиток с автоматами</span> <span class="item-price">350–600 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="droplet"></i> Ванная</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Плитка</span> <span class="item-price">20–35 лари</span></li>
+                                    <li><span class="item-name">Душевая кабина</span> <span class="item-price">350–550 лари</span></li>
+                                    <li><span class="item-name">Смесители</span> <span class="item-price">100–150 лари</span></li>
+                                    <li><span class="item-name">Раковина + кран + зеркало</span> <span class="item-price">600–1000 лари</span></li>
+                                    <li><span class="item-name">Унитаз стандарт</span> <span class="item-price">400–600 лари</span></li>
+                                    <li><span class="item-name">Змеевик</span> <span class="item-price">100–150 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="coffee"></i> Кухня</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Кухня из ДСП (низ + верх) и деревянная столешница</span> <span class="item-price">6000–9000 лари</span></li>
+                                    <li><span class="item-name">Холодильник (не встроенный)</span> <span class="item-price">800–1000 лари</span></li>
+                                    <li><span class="item-name">Вытяжка</span> <span class="item-price">100–170 лари</span></li>
+                                    <li><span class="item-name">Духовой шкаф и Варочная панель</span> <span class="item-price">450–650 лари (итого)</span></li>
+                                    <li><span class="item-name">Раковина и Кран</span> <span class="item-price">200–300 лари (итого)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="moon"></i> Спальня и Зал</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Кровать и 2 тумбы</span> <span class="item-price">1600–2000 лари</span></li>
+                                    <li><span class="item-name">Шкаф</span> <span class="item-price">1500–2000 лари</span></li>
+                                    <li><span class="item-name">Диван (Зал)</span> <span class="item-price">1300–1500 лари</span></li>
+                                    <li><span class="item-name">Телевизор (Зал)</span> <span class="item-price">1000–1200 лари</span></li>
+                                    <li><span class="item-name">Кондиционер (по желанию)</span> <span class="item-price">1000–1300 лари</span></li>
+                                    <li><span class="item-name">Радиаторы отопления</span> <span class="item-price">250–350 лари (шт)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="home"></i> Коридор и Балкон</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Прихожая: Шкаф с антресолью</span> <span class="item-price">1500–2000 лари</span></li>
+                                    <li><span class="item-name">Балкон: Газовый котёл</span> <span class="item-price">1800–2300 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Комфорт -->
+                <div class="tab-content" id="tab-comfort">
+                    <div class="package-summary" style="margin-bottom: 2rem;">
+                        <p>Жить красиво, удобно и без переделок</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="layout"></i> Базовая отделка</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">На выбор:</span></li>
+                                    <li class="item-group"><span class="item-name">Ламинат</span> <span class="item-price">35–70 лари</span></li>
+                                    <li class="item-group"><span class="item-name">Плитка (пол)</span> <span class="item-price">30–50 лари</span></li>
+                                    <li><span class="item-name">На выбор:</span></li>
+                                    <li class="item-group"><span class="item-name">Стены: Обои</span> <span class="item-price">75–85 лари</span></li>
+                                    <li class="item-group"><span class="item-name">Стены: Под покраску</span> <span class="item-price">80 лари</span></li>
+                                    <li><span class="item-name">Потолок: Натяжной потолок</span> <span class="item-price">35–50 лари</span></li>
+                                    <li><span class="item-name">Межкомнатные двери</span> <span class="item-price">500–900 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="zap"></i> Свет и Электрика</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Точечный свет (эконом. режим)</span> <span class="item-price">20–35 лари</span></li>
+                                    <li><span class="item-name">Люстры</span> <span class="item-price">150–300 лари</span></li>
+                                    <li><span class="item-name">Розетки</span> <span class="item-price">10–15 лари</span></li>
+                                    <li><span class="item-name">Электрощиток с защитой от перепадов</span> <span class="item-price">600–900 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="droplet"></i> Ванная</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Плитка</span> <span class="item-price">40–70 лари</span></li>
+                                    <li><span class="item-name">Ванная или Душевая</span> <span class="item-price">500–1000 лари</span></li>
+                                    <li><span class="item-name">Смесители (гарантия от 5 лет)</span> <span class="item-price">350–500 лари</span></li>
+                                    <li><span class="item-name">Композитная раковина с зеркалом</span> <span class="item-price">1500–3000 лари (по жел.)</span></li>
+                                    <li><span class="item-name">Унитаз (инсталляция)</span> <span class="item-price">1000–2000 лари</span></li>
+                                    <li><span class="item-name">Змеевик и Вытяжка скрытого монтажа</span> <span class="item-price">350–450 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="coffee"></i> Кухня</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Кухня из МДФ (низ + верх) со столешницей из камня</span> <span class="item-price">9000–12000 лари</span></li>
+                                    <li><span class="item-name">Холодильник встроенный</span> <span class="item-price">1200–2000 лари</span></li>
+                                    <li><span class="item-name">Встроенная техника (Вытяжка, Варочная, Духовка)</span> <span class="item-price">1100–1700 лари</span></li>
+                                    <li><span class="item-name">Посудомоечная машина</span> <span class="item-price">600–800 лари</span></li>
+                                    <li><span class="item-name">Встроенная раковина и Кран</span> <span class="item-price">500–850 лари</span></li>
+                                    <li><span class="item-name">Стойка+стулья ИЛИ Стол+стулья</span> <span class="item-price">1500–2500 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="moon"></i> Спальня и Зал</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Спальня: Кровать, 2 тумбы, Шкаф</span> <span class="item-price">4500–6700 лари</span></li>
+                                    <li><span class="item-name">Зал: Диван и Журнальный столик</span> <span class="item-price">1800–3100 лари</span></li>
+                                    <li><span class="item-name">Зал: ТВ и ТВ-тумба</span> <span class="item-price">1700–3000 лари</span></li>
+                                    <li><span class="item-name">Сплит система (зал + спальня)</span> <span class="item-price">1800–2500 лари</span></li>
+                                    <li><span class="item-name">Радиаторы отопления</span> <span class="item-price">350–500 лари (шт)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="home"></i> Коридор и Балкон</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Прихожая: Шкаф с антресолью</span> <span class="item-price">2000–3000 лари</span></li>
+                                    <li><span class="item-name">Балкон: Газовый котёл</span> <span class="item-price">2300–2700 лари</span></li>
+                                    <li><span class="item-name">Балкон: Стол + 2 стула</span> <span class="item-price">200–400 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Премиум -->
+                <div class="tab-content" id="tab-premium">
+                    <div class="package-summary" style="margin-bottom: 2rem;">
+                        <p>Жить как в хорошем отеле, только у себя дома</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="layout"></i> Базовая отделка</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Пол на выбор:</span></li>
+                                    <li class="item-group"><span class="item-name">Ламинат</span> <span class="item-price">50–150 лари</span></li>
+                                    <li class="item-group"><span class="item-name">Плитка</span> <span class="item-price">50–120 лари</span></li>
+                                    <li class="item-group"><span class="item-name">Паркет</span> <span class="item-price">70–100 лари</span></li>
+                                    <li><span class="item-name">Стены на выбор:</span></li>
+                                    <li class="item-group"><span class="item-name">Обои</span> <span class="item-price">85–100 лари</span></li>
+                                    <li class="item-group"><span class="item-name">Под покраску</span> <span class="item-price">100–120 лари</span></li>
+                                    <li><span class="item-name">Натяжной потолок</span> <span class="item-price">50–70 лари</span></li>
+                                    <li><span class="item-name">Теплый пол (по желанию)</span> <span class="item-price">50–100 лари</span></li>
+                                    <li><span class="item-name">Двери межкомнатные</span> <span class="item-price">900–1500 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="zap"></i> Свет и Электрика</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Точечный свет</span> <span class="item-price">35–50 лари</span></li>
+                                    <li><span class="item-name">Люстры</span> <span class="item-price">500–700 лари</span></li>
+                                    <li><span class="item-name">Дополнительное LED-освещение</span> <span class="item-price">1000–2000 лари</span></li>
+                                    <li><span class="item-name">Розетки</span> <span class="item-price">15–20 лари</span></li>
+                                    <li><span class="item-name">Электрощиток с защитой</span> <span class="item-price">1000–2000 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="droplet"></i> Ванная</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Плитка премиум</span> <span class="item-price">50–100 лари</span></li>
+                                    <li><span class="item-name">Ванная или Душевая зона</span> <span class="item-price">1500–2500 лари</span></li>
+                                    <li><span class="item-name">Смесители</span> <span class="item-price">500–1000 лари</span></li>
+                                    <li><span class="item-name">Композитная раковина с зеркалом</span> <span class="item-price">2500–4000 лари</span></li>
+                                    <li><span class="item-name">Унитаз (инсталляция)</span> <span class="item-price">1500–3000 лари</span></li>
+                                    <li><span class="item-name">Змеевик или встроенный п/сушитель</span> <span class="item-price">300–500 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="coffee"></i> Кухня</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Кухня МДФ/Дерево + камень (плюс LED)</span> <span class="item-price">12000–18000 лари</span></li>
+                                    <li><span class="item-name">Холодильник встроенный премиум</span> <span class="item-price">2000–4000 лари</span></li>
+                                    <li><span class="item-name">Посудомоечная машина</span> <span class="item-price">900–1500 лари</span></li>
+                                    <li><span class="item-name">Сенсорная вытяжка, Духовой, Варочная</span> <span class="item-price">2100–3200 лари</span></li>
+                                    <li><span class="item-name">Раковина встроенная + М/ф кран</span> <span class="item-price">800–1400 лари</span></li>
+                                    <li><span class="item-name">Столовая группа (стойка/стол)</span> <span class="item-price">3000–5000 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="moon"></i> Спальня и Зал</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Спальня: Кровать, тумбы, Шкаф</span> <span class="item-price">7700–10900 лари</span></li>
+                                    <li><span class="item-name">Спальня: Рабочая зона (стол+кресло)</span> <span class="item-price">1000–2000 лари</span></li>
+                                    <li><span class="item-name">Зал: Диван</span> <span class="item-price">2500–3500 лари</span></li>
+                                    <li><span class="item-name">Телевизор в каждой комнате или проектор</span> <span class="item-price">1000–2000 лари/шт</span></li>
+                                    <li><span class="item-name">ТВ-тумба и Журнальный столик</span> <span class="item-price">1800–3000 лари</span></li>
+                                    <li><span class="item-name">Сплит система (зал + спальни)</span> <span class="item-price">3000–5000 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="room-block">
+                            <h4>
+                                <div class="room-header-left"><i data-feather="home"></i> Коридор и Балкон</div>
+                                <i data-feather="chevron-down" class="acc-icon"></i>
+                            </h4>
+                            <div class="room-items-wrapper">
+                                <ul class="room-items">
+                                    <li><span class="item-name">Прихожая: Шкаф с антресолью</span> <span class="item-price">3000–4000 лари</span></li>
+                                    <li><span class="item-name">Балкон: Улучшенный газовый котёл</span> <span class="item-price">3000–4000 лари</span></li>
+                                    <li><span class="item-name">Балкон: Ротанговая мебель</span> <span class="item-price">500–1000 лари</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 60px;">
+                <a href="https://wa.me/995593603129" target="_blank" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.1rem;">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    
+    <section class="section bg-alt" id="reviews">
+        <div class="container fade-in-up">
+            <div class="section-header text-center">
+                <h2>Отзывы о ремонте</h2>
+                <p>Главный показатель нашей работы — это довольные клиенты, которые рекомендуют FRAME своим друзьям.</p>
+            </div>
+            
+            <div class="slider-container" style="position: relative; max-width: 1200px; margin: 0 auto;">
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Review 1 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="review-avatar">A</div>
+                                    <div>
+                                        <div class="review-name">Александр М.</div>
+                                        <div class="item-note">Пакет «Комфорт», удаленно из РФ</div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    «Я присутствовал только на подписании договора и на получении ключей спустя 3 месяца. Все отчеты скидывали еженедельно. Никаких доплат сверх сметы. Картинка совпала с реальностью на 100%. Спасибо огромнейшее за спокойный сон во время ремонта!»
+                                </div>
+                                <div class="review-gallery">
+                                    <a href="images/gallery_bed.png" class="glightbox" data-gallery="rev1"><img src="images/gallery_bed.png" alt="Отзыв 1"></a>
+                                    <a href="images/gallery_bed.png" class="glightbox" data-gallery="rev1"><img src="images/gallery_bed.png" alt="Отзыв 1"></a>
+                                    <a href="images/gallery_bed.png" class="glightbox" data-gallery="rev1"><img src="images/gallery_bed.png" alt="Отзыв 1"></a>
+                                    <a href="images/gallery_bed.png" class="glightbox" data-gallery="rev1"><img src="images/gallery_bed.png" alt="Отзыв 1"></a>
+                                    <a href="images/gallery_bed.png" class="glightbox" data-gallery="rev1"><img src="images/gallery_bed.png" alt="Отзыв 1"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Review 2 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="review-avatar">E</div>
+                                    <div>
+                                        <div class="review-name">Елена К.</div>
+                                        <div class="item-note">Пакет «Премиум+»</div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    «Внимание к деталям на невероятном уровне. Электрика разведена так, что розетки всегда под рукой. Строители убирали за собой мусор ежедневно. Это абсолютно другой уровень сервиса для Батуми.»
+                                </div>
+                                <div class="review-gallery">
+                                    <a href="images/gallery_bath.png" class="glightbox" data-gallery="rev2"><img src="images/gallery_bath.png" alt="Отзыв 2"></a>
+                                    <a href="images/gallery_bath.png" class="glightbox" data-gallery="rev2"><img src="images/gallery_bath.png" alt="Отзыв 2"></a>
+                                    <a href="images/gallery_bath.png" class="glightbox" data-gallery="rev2"><img src="images/gallery_bath.png" alt="Отзыв 2"></a>
+                                    <a href="images/gallery_bath.png" class="glightbox" data-gallery="rev2"><img src="images/gallery_bath.png" alt="Отзыв 2"></a>
+                                    <a href="images/gallery_bath.png" class="glightbox" data-gallery="rev2"><img src="images/gallery_bath.png" alt="Отзыв 2"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Review 3 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="review-avatar">O</div>
+                                    <div>
+                                        <div class="review-name">Олег П.</div>
+                                        <div class="item-note">Пакет «Эконом», студия под сдачу</div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    «Делал ремонт квартиры специально под посуточную аренду. FRAME посоветовали неубиваемый ламинат и спрятали провода. Сделали очень быстро. Через месяц уже заселил первых гостей!»
+                                </div>
+                                <div class="review-gallery">
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev3"><img src="images/gallery_kitchen.png" alt="Отзыв 3"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev3"><img src="images/gallery_kitchen.png" alt="Отзыв 3"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev3"><img src="images/gallery_kitchen.png" alt="Отзыв 3"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev3"><img src="images/gallery_kitchen.png" alt="Отзыв 3"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev3"><img src="images/gallery_kitchen.png" alt="Отзыв 3"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="review-avatar">M</div>
+                                    <div>
+                                        <div class="review-name">Мария В.</div>
+                                        <div class="item-note">Пакет «Комфорт»</div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    «Очень понравилось, что не нужно было ездить по магазинам и выбирать краны или выключатели. Ребята прислали 3 варианта, я выбрала один, и они всё закупили. В смете не появилось ни одного "скрытого" гвоздя.»
+                                </div>
+                                <div class="review-gallery">
+                                    <a href="images/gallery_living.png" class="glightbox" data-gallery="rev4"><img src="images/gallery_living.png" alt="Отзыв 4"></a>
+                                    <a href="images/gallery_living.png" class="glightbox" data-gallery="rev4"><img src="images/gallery_living.png" alt="Отзыв 4"></a>
+                                    <a href="images/gallery_living.png" class="glightbox" data-gallery="rev4"><img src="images/gallery_living.png" alt="Отзыв 4"></a>
+                                    <a href="images/gallery_living.png" class="glightbox" data-gallery="rev4"><img src="images/gallery_living.png" alt="Отзыв 4"></a>
+                                    <a href="images/gallery_living.png" class="glightbox" data-gallery="rev4"><img src="images/gallery_living.png" alt="Отзыв 4"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 5 -->
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <div class="review-avatar">Д</div>
+                                    <div>
+                                        <div class="review-name">Давид И.</div>
+                                        <div class="item-note">Пакет «Премиум+»</div>
+                                    </div>
+                                </div>
+                                <div class="review-text">
+                                    «Заказывал премиум, так как для себя и семьи. Всё от теплых полов до умных LED лент установили без единой запинки. Сантехника работает как часы. Рекомендую обращаться только к ним.»
+                                </div>
+                                <div class="review-gallery">
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev5"><img src="images/gallery_kitchen.png" alt="Отзыв 5"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev5"><img src="images/gallery_kitchen.png" alt="Отзыв 5"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev5"><img src="images/gallery_kitchen.png" alt="Отзыв 5"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev5"><img src="images/gallery_kitchen.png" alt="Отзыв 5"></a>
+                                    <a href="images/gallery_kitchen.png" class="glightbox" data-gallery="rev5"><img src="images/gallery_kitchen.png" alt="Отзыв 5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination inside swiper -->
+                    <div class="swiper-pagination" style="position: relative; margin-top: 30px;"></div>
+                </div>
+                <!-- Arrows outside swiper container -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container fade-in-up">
+            <div class="section-header text-center">
+                <h2>Ответы на частые вопросы</h2>
+                <p>Все, что вам нужно знать перед стартом ремонта</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-q">Изменится ли цена в процессе? <i data-feather="chevron-down"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            Нет. Итоговая стоимость и спецификация материалов фиксируются в договоре. Вы заранее знаете, сколько будет стоить каждый элемент ремонта.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Сколько длится ремонт? <i data-feather="chevron-down"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            Сроки варьируются в зависимости от площади и выбранного пакета, но в среднем ремонт под ключ занимает от 60 до 120 дней в черновом варианте новостроек.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Я живу в другой стране, как контролировать процесс? <i data-feather="chevron-down"></i></button>
+                    <div class="faq-a">
+                        <div class="faq-a-inner">
+                            Это наша специализация. Мы работаем с удаленными собственниками: высылаем регулярные фото и видео отчеты на каждом этапе строительства. Вы можете вообще не приезжать на объект вплоть до приемки готовой квартиры.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer bg-alt" id="contact">
+        <div class="container text-center fade-in-up">
+            <h2>Остались вопросы?</h2>
+            <p class="footer-sub">Свяжитесь с нами прямо сейчас и мы рассчитаем смету для вашей квартиры.</p>
+            
+            <div class="contact-box">
+                <a href="tel:+995593603129" class="contact-link">
+                    <i data-feather="phone"></i>
+                    +995 593 60 31 29
+                </a>
+                <a href="mailto:framegeorgia1@gmail.com" class="contact-link">
+                    <i data-feather="mail"></i>
+                    framegeorgia1@gmail.com
+                </a>
+            </div>
+
+            <a href="https://wa.me/995593603129" target="_blank" class="btn btn-primary btn-lg mt-4">Написать в WhatsApp</a>
+            
+            <div class="footer-bottom">
+                <div class="logo">FRAME</div>
+                <a href="index.html" style="color: var(--accent-gold); font-weight: 500;">Перейти в раздел для Агентов (Реферальная программа)</a>
+                <p>&copy; 2026 FRAME System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Floating CTA -->
+    <div class="mobile-floating-cta">
+        <a href="https://wa.me/995593603129" target="_blank" class="btn btn-primary">Заказать проект <i data-feather="arrow-right" style="margin-left: 8px; width: 18px;"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="clients.js"></script>
+</body>
+</html>
