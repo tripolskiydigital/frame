@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileMenuToggle && navLinksContainer) {
         mobileMenuToggle.addEventListener('click', () => {
             navLinksContainer.classList.toggle('nav-active');
+            mobileMenuToggle.classList.toggle('active');
             if(navbarElement) navbarElement.classList.toggle('menu-open');
         });
 
@@ -103,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinksContainer.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinksContainer.classList.remove('nav-active');
+                mobileMenuToggle.classList.remove('active');
                 if(navbarElement) navbarElement.classList.remove('menu-open');
             });
         });

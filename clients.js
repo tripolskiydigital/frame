@@ -1,0 +1,206 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Navbar Scroll Effect
+    const navbar = document.getElementById("navbar");
+    if(navbar) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    }
+
+    // 2. Intersection Observer
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.15
+    };
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                obs.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    document.querySelectorAll(".fade-in-up").forEach(el => observer.observe(el));
+
+    // 3. Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+            if (targetId === "#" || targetId.includes(".html")) return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        });
+    });
+
+    // 4. Scroll indicator
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', () => {
+            document.getElementById('advantages').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+    // 5. Active Navbar Linking
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${id}`) link.classList.add('active');
+                });
+            }
+        });
+    }, { rootMargin: "-20% 0px -60% 0px", threshold: 0 });
+    sections.forEach(s => sectionObserver.observe(s));
+
+    // 6. Mobile Burger Menu
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+    if (mobileMenuToggle && navLinksContainer) {
+        mobileMenuToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('nav-active');
+            mobileMenuToggle.classList.toggle('active');
+            if(navbar) navbar.classList.toggle('menu-open');
+        });
+        navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('nav-active');
+                mobileMenuToggle.classList.remove('active');
+                if(navbar) navbar.classList.remove('menu-open');
+            });
+        });
+    }
+
+    // 7. Floating CTA
+    const floatingCta = document.querySelector('.mobile-floating-cta');
+    if (floatingCta) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > window.innerHeight * 0.7) {
+                floatingCta.classList.add('visible');
+            } else {
+                floatingCta.classList.remove('visible');
+            }
+        });
+    }
+
+    // 8. Tabs Logic
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Find the closest wrapper (section) so we don't interfere with other tab blocks
+            const section = btn.closest('.section');
+            const localBtns = section.querySelectorAll('.tab-btn');
+            const localContents = section.querySelectorAll('.tab-content');
+            
+            // Remove active classes
+            localBtns.forEach(b => b.classList.remove('active'));
+            localContents.forEach(c => c.classList.remove('active'));
+            
+            // Add active to current
+            btn.classList.add('active');
+            document.getElementById(btn.dataset.target).classList.add('active');
+        });
+    });
+
+    // 9. FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-q');
+    faqQuestions.forEach(q => {
+        q.addEventListener('click', () => {
+            const answer = q.nextElementSibling;
+            const isOpen = q.classList.contains('active');
+            
+            // Close all other (optional)
+            faqQuestions.forEach(otherQ => {
+                otherQ.classList.remove('active');
+                otherQ.nextElementSibling.style.maxHeight = null;
+            });
+            
+            if (!isOpen) {
+                q.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+
+    // 10. Room Accordion (Pricing)
+    const roomBlocks = document.querySelectorAll('.room-block h4');
+    roomBlocks.forEach(header => {
+        header.addEventListener('click', () => {
+            const block = header.parentElement;
+            const content = block.querySelector('.room-items-wrapper');
+            if(!content) return;
+            const isOpen = block.classList.contains('open');
+            
+            if (!isOpen) {
+                block.classList.add('open');
+                content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+                block.classList.remove('open');
+                content.style.maxHeight = null;
+            }
+        });
+    });
+
+    // 11. Custom Swipers
+    if (typeof Swiper !== 'undefined') {
+        const swiperCommonConfig = {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: { slidesPerView: 2.5, spaceBetween: 30 },
+                1024: { slidesPerView: 3, spaceBetween: 30 }
+            }
+        };
+
+        // Initialize multiple room swipers dynamically
+        document.querySelectorAll('.room-swiper').forEach(el => {
+            new Swiper(el, swiperCommonConfig);
+        });
+
+        // Testimonial Swiper
+        new Swiper('.testimonials-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    }
+
+    // 12. GLightbox
+    if (typeof GLightbox !== 'undefined') {
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+    }
+});

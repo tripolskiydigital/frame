@@ -44,6 +44,7 @@ html, body {
 
 html {
    scroll-behavior: smooth;
+   scroll-padding-top: 100px;
    background-color: var(--bg-base);
    color: var(--text-primary);
    font-family: var(--font-main);
@@ -869,4 +870,33 @@ img {
        font-size: 1.15rem;
        box-shadow: none;
    }
+}
+
+/* Animated Burger Menu */
+.burger-icon {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger-icon span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+.mobile-menu-toggle.active .burger-icon span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.mobile-menu-toggle.active .burger-icon span:nth-child(2) {
+    opacity: 0;
+}
+.mobile-menu-toggle.active .burger-icon span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
